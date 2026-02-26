@@ -81,7 +81,7 @@ export function Footer() {
 									>
 										{link.name}
 									</SimpleLink>
-									<div className="h-px w-full bg-dark-border transition-colors group-hover:bg-dark-foreground/30" />
+									<div className="h-px w-full bg-secondary/50 transition-colors group-hover:bg-dark-foreground/30" />
 								</div>
 							</StaggerItem>
 						))}

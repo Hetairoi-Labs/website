@@ -1,11 +1,15 @@
 import Image from "next/image";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
+import { WorkCollageCard } from "@/components/landing/collage-card";
 import { Section } from "@/components/layout/section";
 import { GraphLine } from "@/components/ui/graph-line";
 
 export function HowWeDeliver() {
 	return (
-		<Section className="-mt-32 bg-secondary text-secondary-foreground">
+		<Section
+			className="-mt-32 bg-secondary text-secondary-foreground"
+			id="how-we-work"
+		>
 			<div className="mx-auto flex max-w-7xl flex-col gap-16 md:gap-24">
 				<StaggerText className="flex flex-col items-center gap-4" delay={0.2}>
 					<StaggerItem>
@@ -96,64 +100,12 @@ export function HowWeDeliver() {
 
 						<StaggerText className="grow" delay={0.3}>
 							<StaggerItem className="h-full">
-								<div className="group relative flex h-[600px] flex-col overflow-hidden rounded-3xl border border-border/50 bg-background p-6 md:p-8">
-									<div className="absolute inset-0 z-0">
-										<Image
-											alt=""
-											aria-hidden
-											className="object-cover opacity-20"
-											fill
-											sizes="(max-width: 1024px) 100vw, 60vw"
-											src="/images/how-we-deliver/gradient-peach.jpg"
-										/>
-									</div>
-									<div className="relative z-20 mb-12 flex max-w-md flex-col gap-4">
-										<h3 className="font-normal text-2xl text-foreground tracking-[-0.04em] md:text-3xl">
-											Quality over quantity
-										</h3>
-										<p className="text-base text-foreground leading-relaxed md:text-lg">
-											We take on fewer projects so each one gets the attention,
-											detail, and care it deserves.
-										</p>
-									</div>
-
-									<div className="absolute inset-0 h-full w-full overflow-hidden">
-										<div className="absolute bottom-0 left-0 h-[65%] w-full">
-											<div className="absolute top-[6%] left-[-5%] z-10 w-[65%] -rotate-6 rounded-xl border border-border/10 shadow-2xl lg:w-[50%]">
-												<Image
-													alt="Filosign project"
-													className="h-auto w-full rounded-xl"
-													height={600}
-													sizes="(max-width: 1024px) 60vw, 30vw"
-													src="/images/works/filosign.png"
-													width={800}
-												/>
-											</div>
-
-											<div className="absolute top-[1%] right-[-20%] z-10 w-[65%] -rotate-8 rounded-xl border border-border/10 shadow-2xl lg:right-[-10%] lg:w-[55%]">
-												<Image
-													alt="Haithe project"
-													className="h-auto w-full rounded-xl"
-													height={600}
-													sizes="(max-width: 1024px) 60vw, 33vw"
-													src="/images/works/haithe.png"
-													width={800}
-												/>
-											</div>
-
-											<div className="absolute top-[15%] left-[18%] z-20 w-[65%] -rotate-5 rounded-xl border border-border/10 shadow-2xl lg:w-[55%]">
-												<Image
-													alt="Replycorp project"
-													className="h-auto w-full rounded-xl"
-													height={600}
-													sizes="(max-width: 1024px) 60vw, 33vw"
-													src="/images/works/replycorp.png"
-													width={800}
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
+								<WorkCollageCard
+									backgroundSrc="/images/how-we-deliver/gradient-peach.jpg"
+									href="/how-we-work"
+									subtitle="Learn our process"
+									title="Quality over quantity"
+								/>
 							</StaggerItem>
 						</StaggerText>
 					</div>

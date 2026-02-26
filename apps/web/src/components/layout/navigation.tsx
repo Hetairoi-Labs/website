@@ -11,10 +11,10 @@ export function Navigation() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	const mobileLinks = [
-		{ name: "Services", href: "/services" },
-		{ name: "Case Studies", href: "/case-studies" },
-		{ name: "How We Work", href: "/how-we-work" },
-		{ name: "Contact", href: "/contact" },
+		{ name: "Services", href: "/#services" },
+		{ name: "Case Studies", href: "/#case-studies" },
+		{ name: "How We Work", href: "/#how-we-work" },
+		{ name: "Contact", href: "/#contact" },
 	];
 
 	return (
@@ -37,30 +37,30 @@ export function Navigation() {
 					<StaggerItem className="hidden items-center gap-8 rounded-2xl bg-secondary p-6 pr-6 lg:flex">
 						<SimpleLink
 							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
-							href="/services"
+							href="/#services"
 						>
 							Services
 						</SimpleLink>
 						<SimpleLink
 							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
-							href="/case-studies"
+							href="/#case-studies"
 						>
 							Case Studies
 						</SimpleLink>
 						<SimpleLink
 							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
-							href="/how-we-work"
+							href="/#how-we-work"
 						>
 							How We Work
 						</SimpleLink>
 						<SimpleLink
 							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
-							href="/contact"
+							href="/#contact"
 						>
 							Contact
 						</SimpleLink>
 
-						<CTAButton href="/contact">Schedule a Call</CTAButton>
+						<CTAButton href="/#contact">Schedule a Call</CTAButton>
 					</StaggerItem>
 
 					<StaggerItem className="lg:hidden">
@@ -88,7 +88,7 @@ export function Navigation() {
 							{link.name}
 						</SimpleLink>
 					))}
-					<CTAButton href="/contact">Schedule a Call</CTAButton>
+					<CTAButton href="/#contact">Schedule a Call</CTAButton>
 				</div>
 			)}
 		</nav>

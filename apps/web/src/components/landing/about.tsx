@@ -5,7 +5,7 @@ import { SimpleLink } from "@/components/ui/simple-link";
 
 export function About() {
 	return (
-		<Section className="bg-secondary text-secondary-foreground">
+		<Section className="bg-secondary text-secondary-foreground" id="services">
 			<div className="mx-auto flex max-w-7xl flex-col gap-24 md:gap-32">
 				<div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[1fr_auto]">
 					<StaggerText delay={0.2}>

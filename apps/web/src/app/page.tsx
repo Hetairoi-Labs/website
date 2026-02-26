@@ -1,6 +1,7 @@
 import nextDynamic from "next/dynamic";
 import { ScrollSmootherLayout } from "@/components/animations/scroll-smoother";
 import { About } from "@/components/landing/about";
+import { Contact } from "@/components/landing/contact";
 import { Hero } from "@/components/landing/hero";
 import { Navigation } from "@/components/layout/navigation";
 
@@ -63,6 +64,7 @@ export default function Home() {
 					<HowWeDeliver />
 					<Works />
 					<FAQ />
+					<Contact />
 					<Footer />
 				</main>
 			</ScrollSmootherLayout>

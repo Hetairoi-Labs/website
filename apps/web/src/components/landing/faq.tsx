@@ -53,13 +53,13 @@ const faqItems = [
 
 export function FAQ() {
 	return (
-		<Section className="pt-36 pb-24 md:pt-44 md:pb-32 lg:pt-48">
-			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-12 lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-20">
+		<Section className="pt-36 pb-24 md:pt-44 md:pb-32 lg:pt-48" id="faq">
+			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-12 lg:grid-cols-[0.5fr_1fr] lg:gap-20">
 				<div className="lg:sticky lg:top-24">
 					<p className="mb-5 font-mono text-muted-foreground text-xs uppercase tracking-[0.24em]">
 						FAQ&apos;S
 					</p>
-					<h1 className="max-w-md font-normal text-5xl text-foreground leading-[0.95] tracking-[-0.04em] md:text-7xl">
+					<h1 className="max-w-md font-normal text-4xl text-foreground leading-[0.95] tracking-[-0.04em] md:text-5xl">
 						Frequently asked questions
 					</h1>
 					<p className="mt-8 max-w-sm text-lg text-muted-foreground leading-relaxed">

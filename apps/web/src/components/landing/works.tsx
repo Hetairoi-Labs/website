@@ -60,7 +60,7 @@ export function Works() {
 	const hoveredProject = projects.find((p) => p.id === hoveredImageId);
 
 	return (
-		<Section alt className="">
+		<Section alt className="" id="case-studies">
 			<CursorArrow
 				accentColor={hoveredProject?.accentColor}
 				initialPosition={initialMousePos}
