@@ -5,7 +5,7 @@ import { GraphLine } from "@/components/ui/graph-line";
 
 export function HowWeDeliver() {
 	return (
-		<Section className="py-24 md:py-32">
+		<Section className="-mt-32 bg-secondary text-secondary-foreground">
 			<div className="mx-auto flex max-w-7xl flex-col gap-16 md:gap-24">
 				<StaggerText className="flex flex-col items-center gap-4" delay={0.2}>
 					<StaggerItem>

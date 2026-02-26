@@ -60,7 +60,7 @@ export function Works() {
 	const hoveredProject = projects.find((p) => p.id === hoveredImageId);
 
 	return (
-		<Section alt className="py-24 md:py-32">
+		<Section alt className="">
 			<CursorArrow
 				accentColor={hoveredProject?.accentColor}
 				initialPosition={initialMousePos}

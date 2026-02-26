@@ -5,12 +5,12 @@ import { SimpleLink } from "@/components/ui/simple-link";
 
 export function About() {
 	return (
-		<Section className="min-h-screen bg-dark py-24 text-dark-foreground md:py-32">
+		<Section className="bg-secondary text-secondary-foreground">
 			<div className="mx-auto flex max-w-7xl flex-col gap-24 md:gap-32">
 				<div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[1fr_auto]">
 					<StaggerText delay={0.2}>
 						<StaggerItem>
-							<h2 className="max-w-xl font-normal text-2xl text-dark-foreground leading-[1.1] tracking-[-0.04em] md:text-3xl lg:text-5xl">
+							<h2 className="max-w-xl font-normal text-2xl text-secondary-foreground leading-[1.1] tracking-[-0.04em] md:text-3xl lg:text-5xl">
 								We help you build production-grade systems with confidence and
 								clarity
 							</h2>
@@ -27,7 +27,7 @@ export function About() {
 				<div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[200px_1fr_1fr] lg:gap-16">
 					<StaggerText className="hidden md:block" delay={0.2} triggerOnView>
 						<StaggerItem>
-							<span className="font-mono text-dark-foreground/60 text-xs uppercase tracking-[0.2em]">
+							<span className="font-mono text-secondary-foreground/60 text-xs uppercase tracking-[0.2em]">
 								About Us
 							</span>
 						</StaggerItem>
@@ -54,14 +54,14 @@ export function About() {
 						triggerOnView
 					>
 						<StaggerItem>
-							<p className="font-light text-dark-foreground/90 text-xl leading-relaxed md:text-2xl">
+							<p className="font-light text-secondary-foreground/90 text-xl leading-relaxed md:text-2xl">
 								We design and build reliable, maintainable software systems that
 								help teams move faster and operate with confidence.
 							</p>
 						</StaggerItem>
 						<StaggerItem>
 							<SimpleLink
-								className="inline-block border-dark-border border-b pb-1 text-dark-foreground/80 no-underline transition-colors hover:border-dark-foreground/30 hover:text-dark-foreground hover:no-underline"
+								className="inline-block border-dark-border border-b pb-1 text-secondary-foreground/80 no-underline transition-colors hover:border-dark-foreground/30 hover:text-secondary-foreground hover:no-underline"
 								href="/about"
 							>
 								Read more about us

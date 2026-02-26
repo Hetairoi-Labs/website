@@ -71,12 +71,12 @@ export function FAQ() {
 				<Accordion className="gap-4" defaultValue={["services"]}>
 					{faqItems.map((item) => (
 						<AccordionItem
-							className="overflow-hidden rounded-xl bg-muted/35"
+							className="overflow-hidden rounded-xl bg-muted"
 							key={item.id}
 							value={item.id}
 						>
-							<AccordionTrigger className="px-5 py-5 md:px-6 md:py-6">
-								<span className="pr-2 font-normal text-foreground text-xl leading-tight md:text-[1.75rem]">
+							<AccordionTrigger className="flex items-center justify-between p-5 md:p-6">
+								<span className="pr-2 font-normal text-foreground text-lg leading-tight md:text-xl">
 									{item.question}
 								</span>
 							</AccordionTrigger>
