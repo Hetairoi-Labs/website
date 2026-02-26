@@ -73,7 +73,7 @@ export function GraphLine({ className }: GraphLineProps) {
 			)}
 		>
 			<svg
-				className="h-full w-full text-accent"
+				className="h-full w-full text-brand"
 				fill="none"
 				preserveAspectRatio="none"
 				ref={svgRef}

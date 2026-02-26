@@ -34,7 +34,7 @@ export function Navigation() {
 						</SimpleLink>
 					</StaggerItem>
 
-					<StaggerItem className="hidden items-center gap-8 rounded-2xl bg-card p-6 pr-6 lg:flex">
+					<StaggerItem className="hidden items-center gap-8 rounded-2xl bg-secondary p-6 pr-6 lg:flex">
 						<SimpleLink
 							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
 							href="/services"

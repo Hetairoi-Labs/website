@@ -38,6 +38,17 @@ const Footer = nextDynamic(
 	}
 );
 
+const FAQ = nextDynamic(
+	() =>
+		import("@/components/landing/faq").then((m) => ({
+			default: m.FAQ,
+		})),
+	{
+		ssr: true,
+		loading: () => <section className="min-h-[500px] w-full py-24 md:py-32" />,
+	}
+);
+
 export const dynamic = "force-static";
 
 export default function Home() {
@@ -50,6 +61,7 @@ export default function Home() {
 				<About />
 				<HowWeDeliver />
 				<Works />
+				<FAQ />
 				<Footer />
 			</main>
 		</div>
