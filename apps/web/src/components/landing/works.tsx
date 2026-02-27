@@ -145,7 +145,7 @@ export function Works() {
 				</div>
 
 				<div className="flex items-start pt-8">
-					<SimpleLink href="/works">View all works</SimpleLink>
+					<SimpleLink href="/#case-studies">View all works</SimpleLink>
 				</div>
 			</div>
 		</Section>

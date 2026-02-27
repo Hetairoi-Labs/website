@@ -62,7 +62,7 @@ export function About() {
 						<StaggerItem>
 							<SimpleLink
 								className="inline-block border-dark-border border-b pb-1 text-secondary-foreground/80 no-underline transition-colors hover:border-dark-foreground/30 hover:text-secondary-foreground hover:no-underline"
-								href="/about"
+								href="/#services"
 							>
 								Read more about us
 							</SimpleLink>

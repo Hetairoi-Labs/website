@@ -44,7 +44,7 @@ export function Contact() {
 						<StaggerItem>
 							<WorkCollageCard
 								backgroundSrc="/images/contact/checkout-work-bg.jpg"
-								href="/works"
+								href="/#case-studies"
 								subtitle="View all works"
 								title="Checkout our work"
 							/>
@@ -98,11 +98,11 @@ export function Contact() {
 
 							<p className="mt-4 text-center text-foreground/60 text-sm md:text-base">
 								By submitting, you agree to our{" "}
-								<a className="underline hover:text-foreground" href="/terms">
+								<a className="underline hover:text-foreground" href="#terms">
 									Terms
 								</a>{" "}
 								and{" "}
-								<a className="underline hover:text-foreground" href="/privacy">
+								<a className="underline hover:text-foreground" href="#privacy">
 									Privacy Policy
 								</a>
 								.
