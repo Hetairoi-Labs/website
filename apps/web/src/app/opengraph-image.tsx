@@ -1,7 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const dynamic = "force-static";
-
 export const alt =
 	"Hetairoi® Consulting LLC - Blockchain & Software Engineering";
 export const size = { width: 1200, height: 630 };
