@@ -32,7 +32,7 @@ export function Hero() {
 					</StaggerItem>
 
 					<StaggerItem>
-						<CTAButton href="/how-we-work">Get Started</CTAButton>
+						<CTAButton href="/#">Get Started</CTAButton>
 					</StaggerItem>
 				</StaggerText>
 			</div>

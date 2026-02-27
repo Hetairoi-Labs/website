@@ -102,7 +102,7 @@ export function HowWeDeliver() {
 							<StaggerItem className="h-full">
 								<WorkCollageCard
 									backgroundSrc="/images/how-we-deliver/gradient-peach.jpg"
-									href="/how-we-work"
+									href="/#how-we-work"
 									subtitle="Learn our process"
 									title="Quality over quantity"
 								/>
