@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 		template: "%s | Hetairoi Consulting LLC",
 	},
 	description:
-		"US-registered consulting firm. Globally distributed engineering delivery. Local client coordination. Production-grade systems for Web3, AI, and full-stack web.",
+		"US-based software firm delivering AI-first platforms, blockchain solutions, and end-to-end applications.",
 	keywords: [
 		"consulting",
 		"software engineering",
@@ -71,13 +71,13 @@ export const metadata: Metadata = {
 		siteName: "Hetairoi® Consulting LLC",
 		title: "Hetairoi® Consulting LLC | Blockchain & Software Engineering",
 		description:
-			"US-registered consulting firm. Globally distributed engineering delivery. Local client coordination.",
+			"US-based software firm delivering AI-first platforms, blockchain solutions, and end-to-end applications.",
 	},
 	twitter: {
 		card: "summary_large_image",
 		title: "Hetairoi® Consulting LLC | Blockchain & Software Engineering",
 		description:
-			"US-registered consulting firm. Globally distributed engineering delivery. Local client coordination.",
+			"US-based software firm delivering AI-first platforms, blockchain solutions, and end-to-end applications.",
 	},
 };
 
@@ -98,7 +98,7 @@ export default function RootLayout({
 		name: "Hetairoi Consulting LLC",
 		url: SITE_URL,
 		description:
-			"US-registered consulting firm. Globally distributed engineering delivery. Local client coordination.",
+			"US-based software firm delivering AI-first platforms, blockchain solutions, and end-to-end applications.",
 	};
 
 	return (

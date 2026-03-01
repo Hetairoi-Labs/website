@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
 		name: "Hetairoi® Consulting LLC",
 		short_name: "Hetairoi",
 		description:
-			"US-registered consulting firm. Globally distributed engineering delivery. Local client coordination.",
+			"US-based software firm delivering AI-first platforms, blockchain solutions, and end-to-end applications.",
 		start_url: "/",
 		display: "standalone",
 		background_color: "#ffffff",

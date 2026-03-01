@@ -40,8 +40,8 @@ export default function Image() {
 					lineHeight: 1.4,
 				}}
 			>
-				US-registered consulting firm · Globally distributed engineering
-				delivery · Local client coordination
+				US-based software firm delivering AI-first platforms, blockchain
+				solutions, and end-to-end applications
 			</div>
 			<div
 				style={{
