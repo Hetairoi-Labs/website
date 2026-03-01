@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { Hero } from "@/components/landing/hero";
 import { Navigation } from "@/components/layout/navigation";
+import { prefersReducedMotion } from "@/lib/browser";
 
 export function IntroSequence() {
 	const scopeRef = useRef<HTMLDivElement>(null);
@@ -23,6 +24,11 @@ export function IntroSequence() {
 		});
 
 		if (items.length === 0) {
+			return;
+		}
+
+		if (prefersReducedMotion()) {
+			gsap.set(items, { opacity: 1, y: 0 });
 			return;
 		}
 

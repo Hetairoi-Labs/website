@@ -3,6 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { getBrandColor } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Arrow } from "./arrow";
@@ -25,8 +26,13 @@ export function CursorArrow({
 	arrowClassName,
 }: CursorArrowProps) {
 	const containerRef = useRef<HTMLDivElement>(null);
+	const [mounted, setMounted] = useState(false);
 	const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 	const isFirstRender = useRef(true);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
 
 	useEffect(() => {
 		const handleMouseMove = (e: MouseEvent) => {
@@ -89,11 +95,11 @@ export function CursorArrow({
 		{ scope: containerRef, dependencies: [mousePosition, isVisible] }
 	);
 
-	if (!isVisible) {
+	if (!(isVisible && mounted)) {
 		return null;
 	}
 
-	return (
+	return createPortal(
 		<div
 			className={cn("pointer-events-none fixed top-0 left-0 z-50", className)}
 			ref={containerRef}
@@ -116,6 +122,7 @@ export function CursorArrow({
 					/>
 				</div>
 			</div>
-		</div>
+		</div>,
+		document.body
 	);
 }

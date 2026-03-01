@@ -3,19 +3,19 @@ import { CTAButton } from "@/components/ui/cta-button";
 export function Hero() {
 	return (
 		<div
-			className="relative -z-10 flex min-h-screen items-center pt-32 pb-16"
+			className="relative z-0 flex min-h-screen items-center pt-32 pb-16"
 			data-speed="0.5"
 		>
 			<video
 				autoPlay
-				className="absolute inset-0 -z-10 h-full w-full object-cover opacity-70"
+				className="absolute inset-0 z-0 h-full w-full object-cover opacity-70"
 				loop
 				muted
 				playsInline
 			>
 				<source src="/videos/hero.mp4" type="video/mp4" />
 			</video>
-			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-8 lg:grid-cols-[100px_1fr] lg:gap-16">
+			<div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-8 lg:grid-cols-[100px_1fr] lg:gap-16">
 				<div
 					className="hidden translate-y-10 pt-4 opacity-0 lg:block"
 					data-intro-item
