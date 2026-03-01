@@ -1,6 +1,5 @@
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
-import { Barcode } from "@/components/ui/barcode";
 import { SimpleLink } from "@/components/ui/simple-link";
 
 export function About() {
@@ -17,12 +16,6 @@ export function About() {
 								We help you build production-grade systems with confidence and
 								clarity
 							</h2>
-						</StaggerItem>
-					</StaggerText>
-
-					<StaggerText className="-mt-24 hidden lg:block" delay={0.2}>
-						<StaggerItem>
-							<Barcode className="h-auto w-32" />
 						</StaggerItem>
 					</StaggerText>
 				</div>

@@ -1,4 +1,5 @@
 import { CTAButton } from "@/components/ui/cta-button";
+import { Barcode } from "../ui/barcode";
 
 export function Hero() {
 	return (
@@ -15,7 +16,15 @@ export function Hero() {
 				src="/videos/hero_3.webm"
 			/>
 
-			<div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-8 lg:grid-cols-[100px_1fr] lg:gap-16">
+			<div
+				className="absolute right-12 bottom-12 hidden opacity-0 lg:block"
+				data-intro-item
+				data-intro-order="7"
+			>
+				<Barcode className="h-auto w-32" />
+			</div>
+
+			<div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-8 px-8 lg:grid-cols-[100px_1fr] lg:gap-16">
 				<div
 					className="hidden translate-y-10 pt-4 opacity-0 lg:block"
 					data-intro-item
@@ -26,7 +35,7 @@ export function Hero() {
 					</p>
 				</div>
 
-				<div className="flex flex-col gap-4 px-8 lg:gap-6">
+				<div className="flex flex-col gap-4 lg:gap-6">
 					<h1
 						className="translate-y-10 font-normal text-5xl text-foreground leading-[1.1] tracking-[-0.04em] opacity-0 md:text-7xl md:leading-none lg:text-[96px]"
 						data-intro-item
