@@ -15,7 +15,7 @@ export function HowWeDeliver() {
 						</span>
 					</StaggerItem>
 					<StaggerItem>
-						<h2 className="text-center font-normal text-2xl text-foreground leading-[1.1] tracking-[-0.04em] md:text-5xl lg:text-6xl">
+						<h2 className="text-center font-normal text-3xl text-foreground leading-[1.1] tracking-[-0.04em] md:text-4xl lg:text-6xl">
 							How we deliver better
 							<br />
 							work <span className="text-muted-foreground">that lasts</span>

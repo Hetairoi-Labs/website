@@ -75,7 +75,7 @@ export function Works() {
 					>
 						<StaggerItem>
 							<h2 className="text-start font-normal text-6xl text-foreground leading-none tracking-[-0.04em] md:text-8xl lg:text-[120px]">
-								Works
+								Projects
 							</h2>
 						</StaggerItem>
 					</StaggerText>
@@ -144,7 +144,7 @@ export function Works() {
 					))}
 				</div>
 
-				<div className="flex items-start pt-8">
+				<div className="flex items-start lg:pt-8">
 					<SimpleLink href="/#case-studies">View all works</SimpleLink>
 				</div>
 			</div>

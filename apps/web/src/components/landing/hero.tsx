@@ -17,7 +17,7 @@ export function Hero() {
 			/>
 
 			<div
-				className="absolute right-12 bottom-12 hidden opacity-0 lg:block"
+				className="absolute right-16 bottom-16 hidden opacity-0 lg:block"
 				data-intro-item
 				data-intro-order="7"
 			>

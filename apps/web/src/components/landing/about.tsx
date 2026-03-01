@@ -1,5 +1,6 @@
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
+import { Barcode } from "@/components/ui/barcode";
 import { SimpleLink } from "@/components/ui/simple-link";
 
 export function About() {
@@ -8,14 +9,20 @@ export function About() {
 			className="relative z-20 bg-secondary pb-0 text-secondary-foreground lg:pb-0"
 			id="services"
 		>
-			<div className="mx-auto flex max-w-7xl flex-col gap-24 md:gap-32">
+			<div className="mx-auto flex max-w-7xl flex-col gap-12 md:gap-32">
 				<div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[1fr_auto]">
 					<StaggerText delay={0.2}>
 						<StaggerItem>
-							<h2 className="max-w-xl font-normal text-2xl text-secondary-foreground leading-[1.1] tracking-[-0.04em] md:text-3xl lg:text-5xl">
+							<h2 className="max-w-xl font-normal text-3xl text-secondary-foreground leading-[1.1] tracking-[-0.04em] md:text-3xl lg:text-5xl">
 								We help you build production-grade systems with confidence and
 								clarity
 							</h2>
+						</StaggerItem>
+					</StaggerText>
+
+					<StaggerText className="-mt-16 hidden lg:block" delay={0.2}>
+						<StaggerItem>
+							<Barcode className="h-auto w-32" />
 						</StaggerItem>
 					</StaggerText>
 				</div>
@@ -45,7 +52,7 @@ export function About() {
 					</StaggerText>
 
 					<StaggerText
-						className="flex flex-col gap-8"
+						className="flex flex-col gap-4 lg:gap-8"
 						delay={0.2}
 						triggerOnView
 					>
@@ -57,7 +64,7 @@ export function About() {
 						</StaggerItem>
 						<StaggerItem>
 							<SimpleLink
-								className="inline-block border-dark-border border-b pb-1 text-secondary-foreground/80 no-underline transition-colors hover:border-dark-foreground/30 hover:text-secondary-foreground hover:no-underline"
+								className="inline-block border-dark-border border-b pb-1 text-secondary-foreground/80 text-sm no-underline transition-colors hover:border-dark-foreground/30 hover:text-secondary-foreground hover:no-underline lg:text-base"
 								href="/#services"
 							>
 								Read more about us
@@ -67,18 +74,18 @@ export function About() {
 				</div>
 			</div>
 
-			<div className="-mx-8 mt-40 grid min-h-[72vh] w-auto grid-cols-1 lg:-mx-16 lg:grid-cols-2">
+			<div className="-mx-8 mt-16 grid min-h-[72vh] w-auto grid-cols-1 lg:-mx-16 lg:mt-40 lg:grid-cols-2">
 				<div className="flex min-h-[50dvh] flex-col p-8 md:p-12 lg:pl-16">
 					<StaggerText className="h-full" delay={0.15} triggerOnView>
 						<StaggerItem>
-							<h2 className="font-normal text-2xl text-foreground tracking-[-0.04em] md:text-3xl lg:text-5xl">
+							<h2 className="font-normal text-3xl text-foreground tracking-[-0.04em] md:text-3xl lg:text-5xl">
 								Our Vision
 							</h2>
 						</StaggerItem>
 
 						<StaggerItem>
-							<p className="mt-8 max-w-xl text-foreground text-xl leading-relaxed md:text-2xl">
-								Our vision is to empower brands to grow with clarity and
+							<p className="mt-8 max-w-xl text-foreground text-lg leading-relaxed md:text-2xl">
+								Our vision is to empower businesses to grow with clarity and
 								purpose. We partner with clients to understand their goals and
 								values, then create digital experiences that truly represent who
 								they are and connect with the people they serve.
@@ -88,7 +95,9 @@ export function About() {
 						<StaggerItem>
 							<div className="mt-8 flex items-center gap-4">
 								<div className="flex flex-col">
-									<span className="text-base text-foreground">Spandan</span>
+									<span className="text-base text-foreground">
+										Spandan Barve
+									</span>
 									<span className="text-foreground/60 text-sm">
 										Founder, Hetairoi
 									</span>

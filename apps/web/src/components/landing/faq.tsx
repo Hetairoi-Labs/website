@@ -53,7 +53,7 @@ const faqItems = [
 
 export function FAQ() {
 	return (
-		<Section className="pt-36 pb-24 md:pt-44 md:pb-32 lg:pt-48" id="faq">
+		<Section className="-mt-16" id="faq">
 			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-12 lg:grid-cols-[0.5fr_1fr] lg:gap-20">
 				<div className="lg:sticky lg:top-24">
 					<p className="mb-5 font-mono text-muted-foreground text-xs uppercase tracking-[0.24em]">
