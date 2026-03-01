@@ -39,6 +39,7 @@ export function ScrollSmootherLayout({ children }: ScrollSmootherLayoutProps) {
 				content: contentRef.current,
 				smooth: 0.25,
 				smoothTouch: 0.1,
+				effects: true,
 			});
 
 			return () => {

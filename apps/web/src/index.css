@@ -138,3 +138,9 @@
 		@apply font-sans;
 	}
 }
+
+@layer utilities {
+	.glass {
+		@apply bg-background/50 shadow-sm backdrop-blur-md;
+	}
+}

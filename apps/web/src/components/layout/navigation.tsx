@@ -2,7 +2,6 @@
 
 import { List, X } from "lucide-react";
 import { useState } from "react";
-import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { CTAButton } from "@/components/ui/cta-button";
 import { SimpleLink } from "@/components/ui/simple-link";
 import { cn } from "@/lib/utils";
@@ -20,21 +19,29 @@ export function Navigation() {
 	return (
 		<nav
 			className={cn(
-				"absolute top-0 left-0 z-50 w-full px-4 py-6 md:px-8 lg:px-16"
+				"absolute top-0 left-0 z-50 w-full px-4 py-8 md:px-8 lg:px-16"
 			)}
 		>
 			<div className="mx-auto max-w-7xl">
-				<StaggerText className="w-full flex-row items-start justify-between">
-					<StaggerItem className="pt-2">
+				<div className="flex w-full flex-row items-start justify-between">
+					<div
+						className="translate-y-10 pt-2 opacity-0"
+						data-intro-item
+						data-intro-order="1"
+					>
 						<SimpleLink
 							className="font-medium text-foreground text-lg tracking-tight no-underline hover:no-underline"
 							href="/"
 						>
 							Hetairoi®
 						</SimpleLink>
-					</StaggerItem>
+					</div>
 
-					<StaggerItem className="hidden items-center gap-8 rounded-2xl bg-secondary p-6 pr-6 lg:flex">
+					<div
+						className="glass hidden translate-y-10 items-center gap-8 rounded-2xl bg-secondary p-6 pr-6 opacity-0 lg:flex"
+						data-intro-item
+						data-intro-order="2"
+					>
 						<SimpleLink
 							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
 							href="/#services"
@@ -61,9 +68,13 @@ export function Navigation() {
 						</SimpleLink>
 
 						<CTAButton href="/#contact">Schedule a Call</CTAButton>
-					</StaggerItem>
+					</div>
 
-					<StaggerItem className="lg:hidden">
+					<div
+						className="translate-y-10 opacity-0 lg:hidden"
+						data-intro-item
+						data-intro-order="2"
+					>
 						<button
 							aria-label="Toggle menu"
 							className="p-2 text-foreground"
@@ -72,8 +83,8 @@ export function Navigation() {
 						>
 							{isMobileMenuOpen ? <X size={24} /> : <List size={24} />}
 						</button>
-					</StaggerItem>
-				</StaggerText>
+					</div>
+				</div>
 			</div>
 
 			{isMobileMenuOpen && (
