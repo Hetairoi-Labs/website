@@ -6,19 +6,16 @@ import { GraphLine } from "@/components/ui/graph-line";
 
 export function HowWeDeliver() {
 	return (
-		<Section
-			className="-mt-32 bg-secondary text-secondary-foreground"
-			id="how-we-work"
-		>
+		<Section className="pb-0 lg:pb-0" id="how-we-work">
 			<div className="mx-auto flex max-w-7xl flex-col gap-16 md:gap-24">
 				<StaggerText className="flex flex-col items-center gap-4" delay={0.2}>
 					<StaggerItem>
 						<span className="font-mono text-muted-foreground text-xs uppercase tracking-[0.2em]">
-							Why Us
+							Why Us?
 						</span>
 					</StaggerItem>
 					<StaggerItem>
-						<h2 className="text-center font-normal text-2xl text-foreground leading-[1.1] tracking-[-0.04em] md:text-3xl lg:text-5xl">
+						<h2 className="text-center font-normal text-2xl text-foreground leading-[1.1] tracking-[-0.04em] md:text-5xl lg:text-6xl">
 							How we deliver better
 							<br />
 							work <span className="text-muted-foreground">that lasts</span>

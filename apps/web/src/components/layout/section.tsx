@@ -16,7 +16,7 @@ export function Section({
 	return (
 		<section
 			className={cn(
-				"w-full px-4 py-24 md:px-8 md:py-32 lg:px-16 lg:py-40",
+				"w-full px-4 py-24 md:px-8 md:py-32 lg:px-16 lg:py-32",
 				alt ? "bg-card" : "bg-background",
 				className
 			)}

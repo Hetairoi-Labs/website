@@ -1,8 +1,10 @@
+import type { Route } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 interface WorkCollageCardProps {
 	backgroundSrc: string;
-	href: string;
+	href: Route;
 	subtitle: string;
 	title: string;
 }
@@ -29,12 +31,12 @@ export function WorkCollageCard({
 				<h3 className="font-normal text-2xl text-foreground tracking-[-0.04em] md:text-3xl">
 					{title}
 				</h3>
-				<a
+				<Link
 					className="w-fit border-foreground/40 border-b pb-1 text-base text-foreground transition-colors hover:border-foreground hover:text-foreground"
 					href={href}
 				>
 					{subtitle}
-				</a>
+				</Link>
 			</div>
 
 			<div className="absolute inset-0 h-full w-full overflow-hidden">

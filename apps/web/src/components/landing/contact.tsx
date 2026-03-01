@@ -1,4 +1,6 @@
+import type { Route } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { WorkCollageCard } from "@/components/landing/collage-card";
 import { Section } from "@/components/layout/section";
@@ -6,7 +8,7 @@ import { Input } from "@/components/ui/input";
 
 export function Contact() {
 	return (
-		<Section className="-mt-32" id="contact">
+		<Section className="-mt-16" id="contact">
 			<div className="mx-auto grid w-full max-w-7xl grid-cols-1 gap-5 lg:grid-cols-2">
 				<div className="flex flex-col gap-6">
 					<StaggerText delay={0.1} triggerOnView>
@@ -14,7 +16,7 @@ export function Contact() {
 							<div className="grid grid-cols-1 gap-4 rounded-4xl bg-secondary p-4 md:grid-cols-[150px_1fr] md:p-5">
 								<div className="relative aspect-square overflow-hidden rounded-3xl">
 									<Image
-										alt="Mike, client success manager"
+										alt="Hetairoi logo"
 										className="object-cover object-top"
 										fill
 										priority
@@ -31,7 +33,7 @@ export function Contact() {
 									</p>
 									<a
 										className="w-fit border-foreground/70 border-b pb-1 text-base text-foreground transition-colors hover:border-foreground hover:text-foreground"
-										href="mailto:hello@hetairoi.xyz"
+										href={"mailto:hello@hetairoi.xyz"}
 									>
 										Talk directly to us
 									</a>
@@ -44,7 +46,7 @@ export function Contact() {
 						<StaggerItem>
 							<WorkCollageCard
 								backgroundSrc="/images/contact/checkout-work-bg.jpg"
-								href="/#case-studies"
+								href={"/#case-studies" as Route}
 								subtitle="View all works"
 								title="Checkout our work"
 							/>
@@ -98,13 +100,19 @@ export function Contact() {
 
 							<p className="mt-4 text-center text-foreground/60 text-sm md:text-base">
 								By submitting, you agree to our{" "}
-								<a className="underline hover:text-foreground" href="#terms">
+								<Link
+									className="underline hover:text-foreground"
+									href={"/terms-and-conditions" as Route}
+								>
 									Terms
-								</a>{" "}
+								</Link>{" "}
 								and{" "}
-								<a className="underline hover:text-foreground" href="#privacy">
+								<Link
+									className="underline hover:text-foreground"
+									href={"/privacy-policy" as Route}
+								>
 									Privacy Policy
-								</a>
+								</Link>
 								.
 							</p>
 						</div>

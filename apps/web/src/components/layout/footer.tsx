@@ -97,13 +97,13 @@ export function Footer() {
 						<div className="flex gap-6">
 							<SimpleLink
 								className="text-dark-foreground/40 text-xs underline decoration-dark-foreground/20 transition-colors hover:text-dark-foreground/60"
-								href="#privacy"
+								href="/privacy-policy"
 							>
 								Privacy policy
 							</SimpleLink>
 							<SimpleLink
 								className="text-dark-foreground/40 text-xs underline decoration-dark-foreground/20 transition-colors hover:text-dark-foreground/60"
-								href="#terms"
+								href="/terms-and-conditions"
 							>
 								Terms of service
 							</SimpleLink>
