@@ -10,7 +10,7 @@ interface CTAButtonProps {
 	children: React.ReactNode;
 	className?: string;
 	href: string;
-	target?: "_blank" | "_self";
+	target?: "_blank" | "_self" | "_parent" | "_top";
 	variant?: "primary" | "outline";
 }
 

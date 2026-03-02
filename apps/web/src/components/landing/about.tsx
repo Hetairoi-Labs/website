@@ -2,6 +2,7 @@ import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
 import { Barcode } from "@/components/ui/barcode";
 import { SimpleLink } from "@/components/ui/simple-link";
+import { CAL_LINK } from "@/constants";
 
 export function About() {
 	return (
@@ -64,10 +65,11 @@ export function About() {
 						</StaggerItem>
 						<StaggerItem>
 							<SimpleLink
-								className="inline-block border-dark-border border-b pb-1 text-secondary-foreground/80 text-sm no-underline transition-colors hover:border-dark-foreground/30 hover:text-secondary-foreground hover:no-underline lg:text-base"
-								href="/#services"
+								className="inline-block border-dark-border border-b pb-1 text-secondary-foreground/80 text-sm no-underline transition-colors hover:border-dark hover:text-secondary-foreground hover:no-underline lg:text-base"
+								href={CAL_LINK}
+								target="_blank"
 							>
-								Read more about us
+								Let's talk about your project
 							</SimpleLink>
 						</StaggerItem>
 					</StaggerText>

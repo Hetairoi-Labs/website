@@ -1,4 +1,5 @@
 import { CTAButton } from "@/components/ui/cta-button";
+import { CAL_LINK } from "@/constants";
 import { Barcode } from "../ui/barcode";
 
 export function Hero() {
@@ -58,7 +59,7 @@ export function Hero() {
 						data-intro-item
 						data-intro-order="6"
 					>
-						<CTAButton href="/#">Get Started</CTAButton>
+						<CTAButton href={CAL_LINK}>Schedule a Call</CTAButton>
 					</div>
 				</div>
 			</div>

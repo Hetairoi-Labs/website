@@ -7,6 +7,7 @@ interface SimpleLinkProps {
 	className?: string;
 	href: string;
 	onClick?: () => void;
+	target?: "_blank" | "_self";
 }
 
 export function SimpleLink({
@@ -14,6 +15,7 @@ export function SimpleLink({
 	children,
 	className,
 	onClick,
+	target = "_self",
 }: SimpleLinkProps) {
 	return (
 		<Link
@@ -23,6 +25,7 @@ export function SimpleLink({
 			)}
 			href={href as Route}
 			onClick={onClick}
+			target={target}
 		>
 			{children}
 		</Link>

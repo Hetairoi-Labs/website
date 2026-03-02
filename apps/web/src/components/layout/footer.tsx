@@ -11,9 +11,10 @@ export function Footer() {
 	];
 
 	const socialLinks = [
-		{ name: "Instagram", href: "#" },
-		{ name: "Twitter (X)", href: "#" },
-		{ name: "Linkedin", href: "#" },
+		{
+			name: "Linkedin",
+			href: "https://www.linkedin.com/company/hetairoi-consulting/",
+		},
 	];
 
 	return (
@@ -46,8 +47,8 @@ export function Footer() {
 						<StaggerItem>
 							<div className="flex max-w-md flex-col gap-4">
 								<p className="font-light text-dark-foreground/90 text-xl leading-relaxed md:text-2xl">
-									Engineering delivery performed by globally distributed team.
-									Client coordination and communication supported locally.
+									Remotely distributed engineering team, Globally supported
+									coordination.
 								</p>
 							</div>
 						</StaggerItem>

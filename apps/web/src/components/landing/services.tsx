@@ -5,6 +5,7 @@ import Image from "next/image";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
 import { CTAButton } from "@/components/ui/cta-button";
+import { CAL_LINK } from "@/constants";
 import { cn } from "@/lib/utils";
 import { useCarousel } from "../animations/use-carousel";
 
@@ -142,7 +143,7 @@ export function Services() {
 								</AnimatePresence>
 							</div>
 							<div className="mt-4">
-								<CTAButton href="/#contact">Book a discovery call</CTAButton>
+								<CTAButton href={CAL_LINK}>Book a discovery call</CTAButton>
 							</div>
 						</div>
 					</StaggerItem>

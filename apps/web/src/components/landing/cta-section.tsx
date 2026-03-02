@@ -1,5 +1,6 @@
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
+import { CAL_LINK } from "@/constants";
 import { CTAButton } from "../ui/cta-button";
 
 const headingGuideLines = [0, 1, 2, 3] as const;
@@ -42,9 +43,7 @@ export function CtaSection() {
 							your problem and share practical advice for free.
 						</p>
 					</StaggerItem>
-					<CTAButton href="https://calendly.com/kartik-hetairoi/30min">
-						Book a free discovery call
-					</CTAButton>
+					<CTAButton href={CAL_LINK}>Book a Free Call</CTAButton>
 				</StaggerText>
 			</div>
 		</Section>

@@ -4,6 +4,7 @@ import { List, X } from "lucide-react";
 import { useState } from "react";
 import { CTAButton } from "@/components/ui/cta-button";
 import { SimpleLink } from "@/components/ui/simple-link";
+import { CAL_LINK } from "@/constants";
 import { cn } from "@/lib/utils";
 
 export function Navigation() {
@@ -56,7 +57,7 @@ export function Navigation() {
 							Contact
 						</SimpleLink>
 
-						<CTAButton href="/#contact">Schedule a Call</CTAButton>
+						<CTAButton href={CAL_LINK}>Schedule a Call</CTAButton>
 					</div>
 
 					<div

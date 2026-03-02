@@ -5,7 +5,6 @@ import { useState } from "react";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
 import { CursorArrow } from "@/components/ui/cursor-arrow";
-import { SimpleLink } from "@/components/ui/simple-link";
 
 interface Project {
 	accentColor: string;
@@ -142,10 +141,6 @@ export function Works() {
 							</StaggerText>
 						</div>
 					))}
-				</div>
-
-				<div className="flex items-start lg:pt-8">
-					<SimpleLink href="/#case-studies">View all works</SimpleLink>
 				</div>
 			</div>
 		</Section>
