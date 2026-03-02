@@ -1,49 +1,30 @@
-# next
+# Hetairoi® Consulting LLC
 
-This project was created with [Better-T-Stack](https://github.com/AmanVarshney01/create-better-t-stack), a modern TypeScript stack that combines Next.js, Self, and more.
+**US-based software firm delivering AI-first platforms, blockchain solutions, and end-to-end applications.**
 
-## Features
+We help businesses build production-grade systems with confidence and clarity. Our team specializes in modern web technologies, blockchain development, and AI-native solutions.
 
-- **TypeScript** - For type safety and improved developer experience
-- **Next.js** - Full-stack React framework
-- **TailwindCSS** - Utility-first CSS for rapid UI development
-- **shadcn/ui** - Reusable UI components
-- **Biome** - Linting and formatting
-- **PWA** - Progressive Web App support
+## What We Do
 
-## Getting Started
+- **AI-First Platforms** - AI-native integrations and intelligent automation
+- **Blockchain Solutions** - Smart contracts, Web3 applications, and decentralized systems
+- **Full-Stack Development** - End-to-end application development from concept to production
+- **Custom Software** - Reliable, maintainable software systems tailored to your needs
 
-First, install the dependencies:
+## Featured Projects
 
-```bash
-bun install
-```
+### [Replycorp](https://replycorp.io)
+Turn reach into revenue with revolutionary referral systems that transform social media into viral sales channels.
 
-Then, run the development server:
+### [Filosign](https://app.filosign.xyz)
+Production-grade decentralized digital signature platform with blockchain verification and post-quantum cryptography.
 
-```bash
-bun run dev
-```
+### [Haithe](https://haithe.hetairoi.xyz)
+Optimized Web3 marketplace with enhanced transaction processing and database performance.
 
-Open [http://localhost:3001](http://localhost:3001) in your browser to see the fullstack application.
+## Contact
+- **Email**: kartik@hetairoi.xyz
 
-## Git Hooks and Formatting
+## License
 
-- Format and lint fix: `bun run check`
-
-## Project Structure
-
-```
-next/
-├── apps/
-│   └── web/         # Fullstack application (Next.js)
-├── packages/
-```
-
-## Available Scripts
-
-- `bun run dev`: Start all applications in development mode
-- `bun run build`: Build all applications
-- `bun run check-types`: Check TypeScript types across all apps
-- `bun run check`: Run Biome formatting and linting
-- `cd apps/web && bun run generate-pwa-assets`: Generate PWA assets
+© 2026 Hetairoi® Consulting LLC. All rights reserved.
