@@ -25,7 +25,7 @@ const projects: Project[] = [
 			"Turn reach into revenue. Link social activity to outcomes with a revolution in referral systems, transforming social media into a true viral sales channel. A way to directly connect social activity to outcomes.",
 		tags: ["Social Media", "Referral System", "Viral Marketing"],
 		link: "https://replycorp.io",
-		image: "/images/works/replycorp.png",
+		image: "/images/works/replycorp.webp",
 		accentColor: "#FF0013",
 	},
 	{
@@ -35,7 +35,7 @@ const projects: Project[] = [
 			"Production-grade system build, Decentralized digital signature platform with blockchain verification and post-quantum cryptography, delivered from concept to production-ready MVP",
 		tags: ["Blockchain", "Security", "React"],
 		link: "https://app.filosign.xyz",
-		image: "/images/works/filosign.png",
+		image: "/images/works/filosign.webp",
 		accentColor: "#4E9964",
 	},
 	{
@@ -45,7 +45,7 @@ const projects: Project[] = [
 			"Backend performance and infrastructure hardening. Optimized transaction processing and database performance for live Web3 marketplace.",
 		tags: ["Backend", "Web3", "Performance"],
 		link: "https://haithe.hetairoi.xyz",
-		image: "/images/works/haithe.png",
+		image: "/images/works/haithe.webp",
 		accentColor: "#010101",
 	},
 ];

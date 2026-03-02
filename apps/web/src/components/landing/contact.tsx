@@ -45,7 +45,7 @@ export function Contact() {
 					<StaggerText delay={0.2} triggerOnView>
 						<StaggerItem>
 							<WorkCollageCard
-								backgroundSrc="/images/contact/checkout-work-bg.jpg"
+								backgroundSrc="/images/contact/checkout-work-bg.webp"
 								href={"/#case-studies" as Route}
 								subtitle="View all works"
 								title="Checkout our work"

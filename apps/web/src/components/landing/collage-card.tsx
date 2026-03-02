@@ -47,7 +47,7 @@ export function WorkCollageCard({
 							className="h-auto w-full rounded-xl"
 							height={600}
 							sizes="(max-width: 1024px) 60vw, 30vw"
-							src="/images/works/filosign.png"
+							src="/images/works/filosign.webp"
 							width={800}
 						/>
 					</div>
@@ -58,7 +58,7 @@ export function WorkCollageCard({
 							className="h-auto w-full rounded-xl"
 							height={600}
 							sizes="(max-width: 1024px) 60vw, 33vw"
-							src="/images/works/haithe.png"
+							src="/images/works/haithe.webp"
 							width={800}
 						/>
 					</div>
@@ -69,7 +69,7 @@ export function WorkCollageCard({
 							className="h-auto w-full rounded-xl"
 							height={600}
 							sizes="(max-width: 1024px) 60vw, 33vw"
-							src="/images/works/replycorp.png"
+							src="/images/works/replycorp.webp"
 							width={800}
 						/>
 					</div>

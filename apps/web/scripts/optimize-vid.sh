@@ -1,6 +1,4 @@
 #!/bin/bash
-# Adaptive batch convert MP4s -> WebM with CRF scaling
-# Usage: ./optimize-all.sh
 
 INPUT_DIR="public/videos"
 SCALE="1280:-1"

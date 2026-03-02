@@ -44,7 +44,7 @@ export function HowWeDeliver() {
 											fill
 											priority
 											sizes="(max-width: 1024px) 100vw, 40vw"
-											src="/images/how-we-deliver/fast-turnarounds.png"
+											src="/images/how-we-deliver/fast-turnarounds.webp"
 										/>
 									</div>
 								</div>
@@ -69,7 +69,7 @@ export function HowWeDeliver() {
 											className="rotate-180 object-cover object-center opacity-50"
 											fill
 											sizes="(max-width: 1024px) 100vw, 40vw"
-											src="/images/how-we-deliver/gradient-peach.jpg"
+											src="/images/how-we-deliver/gradient-peach.webp"
 										/>
 									</div>
 								</div>
@@ -98,7 +98,7 @@ export function HowWeDeliver() {
 						<StaggerText className="grow" delay={0.3}>
 							<StaggerItem className="h-full">
 								<WorkCollageCard
-									backgroundSrc="/images/how-we-deliver/gradient-peach.jpg"
+									backgroundSrc="/images/how-we-deliver/gradient-peach.webp"
 									href="/#how-we-work"
 									subtitle="Learn our process"
 									title="Quality over quantity"
