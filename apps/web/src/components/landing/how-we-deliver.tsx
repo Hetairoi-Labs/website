@@ -7,8 +7,8 @@ import { Section } from "@/components/layout/section";
 import { GraphLine } from "@/components/ui/graph-line";
 export function HowWeDeliver() {
 	return (
-		<Section className="" id="how-we-work">
-			<div className="mx-auto flex max-w-7xl flex-col gap-16 md:gap-24">
+		<Section className="lg:py-20" id="how-we-work">
+			<div className="mx-auto flex max-w-7xl flex-col gap-20">
 				<StaggerText className="flex flex-col items-center gap-4" delay={0.2}>
 					<StaggerItem>
 						<span className="font-mono text-muted-foreground text-xs uppercase tracking-[0.2em]">
@@ -102,7 +102,7 @@ export function HowWeDeliver() {
 							<StaggerItem className="h-full">
 								<WorkCollageCard
 									backgroundSrc={gradientPeachImage}
-									href="/#how-we-work"
+									href="/#about"
 									subtitle="Learn our process"
 									title="Quality over quantity"
 								/>

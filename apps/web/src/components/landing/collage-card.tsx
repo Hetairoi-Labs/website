@@ -1,9 +1,12 @@
+"use client";
+
 import type { Route } from "next";
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import filosignImage from "@/assets/images/works/filosign.webp";
 import haitheImage from "@/assets/images/works/haithe.webp";
 import replycorpImage from "@/assets/images/works/replycorp.webp";
+import { handleSectionLinkClick } from "@/lib/section-scroll";
 
 interface WorkCollageCardProps {
 	backgroundSrc: StaticImageData;
@@ -38,6 +41,9 @@ export function WorkCollageCard({
 				<Link
 					className="w-fit border-foreground/40 border-b pb-1 text-base text-foreground transition-colors hover:border-foreground hover:text-foreground"
 					href={href}
+					onClick={(event) => {
+						handleSectionLinkClick(event, href);
+					}}
 				>
 					{subtitle}
 				</Link>

@@ -8,7 +8,7 @@ export function About() {
 	return (
 		<Section
 			className="relative z-20 bg-secondary pb-0 text-secondary-foreground lg:pb-0"
-			id="services"
+			id="about"
 		>
 			<div className="mx-auto flex max-w-7xl flex-col gap-12 md:gap-32">
 				<div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[1fr_auto]">

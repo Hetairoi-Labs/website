@@ -5,8 +5,8 @@ import { FAQ } from "@/components/landing/faq";
 import { HowWeDeliver } from "@/components/landing/how-we-deliver";
 import { IntroSequence } from "@/components/landing/intro-sequence";
 import { Pricing } from "@/components/landing/pricing";
+import { Projects } from "@/components/landing/projects";
 import { Services } from "@/components/landing/services";
-import { Works } from "@/components/landing/works";
 import { Footer } from "@/components/layout/footer";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
 					<IntroSequence />
 					<About />
 					<Services />
-					<Works />
+					<Projects />
 					<HowWeDeliver />
 					<FAQ />
 					<Pricing />

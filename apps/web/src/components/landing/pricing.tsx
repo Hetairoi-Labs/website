@@ -18,22 +18,22 @@ interface PricingPlan {
 const pricingPlans: PricingPlan[] = [
 	{
 		id: "starter",
-		name: "Starter Sprint",
-		priceLabel: "$1,000",
+		name: "Flexible",
+		priceLabel: "$1500",
 		periodLabel: "/month",
 		description:
 			"Ongoing monthly support for early teams that need steady momentum.",
 		features: [
-			"Monthly sprint cadence with clear priorities",
+			"Weekly sprint cadence with clear priorities",
 			"Architecture guidance and implementation support",
 			"Weekly updates and async collaboration",
 			"Scoped delivery with predictable turnaround",
-			"Ideal for teams that want to start lean",
+			"Ideal for teams that are figuring out and need flexibility",
 		],
 	},
 	{
 		id: "build",
-		name: "Build Engagement",
+		name: "Comprehensive",
 		priceLabel: "$5,000",
 		periodLabel: "/project",
 		description:
@@ -49,7 +49,7 @@ const pricingPlans: PricingPlan[] = [
 	},
 	{
 		id: "custom",
-		name: "Enterprise Grade",
+		name: "Enterprise",
 		priceLabel: "Custom",
 		periodLabel: "",
 		description:
@@ -69,13 +69,13 @@ export function Pricing() {
 		<Section className="-mt-16" id="pricing">
 			<div className="mx-auto flex w-full max-w-7xl flex-col gap-10 md:gap-14">
 				<StaggerText
-					className="grid grid-cols-1 gap-6 lg:grid-cols-[220px_1fr]"
+					className="grid grid-cols-1 gap-6 lg:grid-cols-[150px_1fr]"
 					delay={0.1}
 					triggerOnView
 				>
 					<StaggerItem>
 						<p className="font-mono text-muted-foreground text-xs uppercase tracking-[0.2em]">
-							Our Pricing
+							Pricing
 						</p>
 					</StaggerItem>
 					<StaggerItem>
@@ -101,7 +101,12 @@ export function Pricing() {
 								<article className="flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card">
 									<div className="flex min-h-62 flex-col gap-6 p-6 md:min-h-68 md:p-8">
 										<p className="font-mono text-muted-foreground text-xs uppercase tracking-[0.2em]">
-											{plan.name}
+											<span className="text-foreground">{plan.name} Plan</span>{" "}
+											{plan.id !== "custom" && (
+												<span className="font-sans text-muted-foreground lowercase">
+													starting at
+												</span>
+											)}
 										</p>
 										<p className="flex items-end gap-2">
 											<span className="font-normal text-4xl text-foreground tracking-[-0.03em] md:text-5xl lg:text-6xl">

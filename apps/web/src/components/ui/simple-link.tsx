@@ -6,7 +6,7 @@ interface SimpleLinkProps {
 	children: React.ReactNode;
 	className?: string;
 	href: string;
-	onClick?: () => void;
+	onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 	target?: "_blank" | "_self";
 }
 

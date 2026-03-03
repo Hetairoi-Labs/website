@@ -88,11 +88,11 @@ export function Services() {
 	}, []);
 
 	return (
-		<Section
-			className="relative overflow-hidden bg-secondary text-secondary-foreground"
-			id="services"
-		>
-			<div className="relative mx-auto mt-16 grid w-full max-w-7xl grid-cols-1 items-start gap-10 lg:grid-cols-[1.05fr_1fr] lg:gap-14">
+		<Section className="relative -mt-16 overflow-hidden bg-secondary text-secondary-foreground">
+			<div
+				className="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-start gap-10 pt-16 lg:grid-cols-[1.05fr_1fr] lg:gap-14"
+				id="services"
+			>
 				<StaggerText className="h-full" delay={0.1} triggerOnView>
 					<StaggerItem className="h-full">
 						<div

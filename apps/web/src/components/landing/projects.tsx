@@ -52,7 +52,7 @@ const projects: Project[] = [
 	},
 ];
 
-export function Works() {
+export function Projects() {
 	const [hoveredImageId, setHoveredImageId] = useState<string | null>(null);
 	const [initialMousePos, setInitialMousePos] = useState<{
 		x: number;
@@ -62,13 +62,16 @@ export function Works() {
 	const hoveredProject = projects.find((p) => p.id === hoveredImageId);
 
 	return (
-		<Section alt className="" id="case-studies">
+		<Section alt className="-mt-16">
 			<CursorArrow
 				accentColor={hoveredProject?.accentColor}
 				initialPosition={initialMousePos}
 				isVisible={hoveredImageId !== null}
 			/>
-			<div className="mx-auto flex max-w-7xl flex-col items-center gap-16 md:gap-24">
+			<div
+				className="mx-auto flex max-w-7xl flex-col items-center gap-16 pt-16 md:gap-24"
+				id="projects"
+			>
 				<div className="w-full">
 					<StaggerText
 						className="mb-12 flex w-full justify-center md:mb-16"

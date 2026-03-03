@@ -5,10 +5,29 @@ import { useState } from "react";
 import { CTAButton } from "@/components/ui/cta-button";
 import { SimpleLink } from "@/components/ui/simple-link";
 import { CAL_LINK } from "@/constants";
+import { handleSectionLinkClick } from "@/lib/section-scroll";
 import { cn } from "@/lib/utils";
+
+const navLinks = [
+	{ id: "about", label: "About" },
+	{ id: "services", label: "Services" },
+	{ id: "projects", label: "Projects" },
+	{ id: "how-we-work", label: "How We Work" },
+	{ id: "faq", label: "FAQ" },
+	{ id: "pricing", label: "Pricing" },
+] as const;
 
 export function Navigation() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+	const onSectionLinkClick = (
+		event: React.MouseEvent<HTMLAnchorElement>,
+		sectionId: string
+	) => {
+		handleSectionLinkClick(event, `/#${sectionId}`, () => {
+			setIsMobileMenuOpen(false);
+		});
+	};
 
 	return (
 		<nav className={cn("absolute top-0 left-0 z-50 w-full px-8 py-8 lg:px-16")}>
@@ -32,30 +51,16 @@ export function Navigation() {
 						data-intro-item
 						data-intro-order="2"
 					>
-						<SimpleLink
-							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
-							href="/#services"
-						>
-							Services
-						</SimpleLink>
-						<SimpleLink
-							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
-							href="/#case-studies"
-						>
-							Case Studies
-						</SimpleLink>
-						<SimpleLink
-							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
-							href="/#how-we-work"
-						>
-							How We Work
-						</SimpleLink>
-						<SimpleLink
-							className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
-							href="/#contact"
-						>
-							Contact
-						</SimpleLink>
+						{navLinks.map((link) => (
+							<SimpleLink
+								className="font-medium text-sm no-underline transition-colors hover:text-muted-foreground hover:no-underline"
+								href={`/#${link.id}`}
+								key={link.id}
+								onClick={(event) => onSectionLinkClick(event, link.id)}
+							>
+								{link.label}
+							</SimpleLink>
+						))}
 
 						<CTAButton href={CAL_LINK}>Schedule a Call</CTAButton>
 					</div>
@@ -75,6 +80,24 @@ export function Navigation() {
 						</button>
 					</div>
 				</div>
+
+				{isMobileMenuOpen && (
+					<div className="mt-4 flex flex-col gap-4 rounded-2xl bg-secondary p-5 lg:hidden">
+						{navLinks.map((link) => (
+							<SimpleLink
+								className="font-medium text-base no-underline transition-colors hover:text-muted-foreground hover:no-underline"
+								href={`/#${link.id}`}
+								key={link.id}
+								onClick={(event) => onSectionLinkClick(event, link.id)}
+							>
+								{link.label}
+							</SimpleLink>
+						))}
+						<CTAButton className="mt-2" href={CAL_LINK}>
+							Schedule a Call
+						</CTAButton>
+					</div>
+				)}
 			</div>
 		</nav>
 	);
