@@ -49,7 +49,7 @@ const pricingPlans: PricingPlan[] = [
 	},
 	{
 		id: "custom",
-		name: "Quote After Discovery",
+		name: "Enterprise Grade",
 		priceLabel: "Custom",
 		periodLabel: "",
 		description:
@@ -66,10 +66,10 @@ const pricingPlans: PricingPlan[] = [
 
 export function Pricing() {
 	return (
-		<Section className="pb-16" id="pricing">
+		<Section className="-mt-16" id="pricing">
 			<div className="mx-auto flex w-full max-w-7xl flex-col gap-10 md:gap-14">
 				<StaggerText
-					className="grid grid-cols-1 gap-6 border-b pb-8 md:pb-10 lg:grid-cols-[220px_1fr]"
+					className="grid grid-cols-1 gap-6 lg:grid-cols-[220px_1fr]"
 					delay={0.1}
 					triggerOnView
 				>
@@ -118,7 +118,7 @@ export function Pricing() {
 
 									<Link
 										className={cn(
-											"group flex w-full items-center justify-center gap-2 border-border border-y px-6 py-4 text-center font-mono text-background text-sm uppercase tracking-[0.2em] transition-colors md:px-8 md:text-base",
+											"group -mt-4 flex w-full items-center justify-center gap-2 border-border border-y px-6 py-4 text-center font-mono text-background text-sm uppercase tracking-[0.2em] transition-colors md:px-8 md:text-base",
 											plan.highlight
 												? "bg-brand hover:bg-brand/90"
 												: "bg-foreground hover:bg-foreground/90"

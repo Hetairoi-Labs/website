@@ -22,7 +22,6 @@ export default function Home() {
 					<FAQ />
 					<Pricing />
 					<CtaSection />
-					{/* <Contact /> */}
 					<Footer />
 				</main>
 			</ScrollSmootherLayout>
