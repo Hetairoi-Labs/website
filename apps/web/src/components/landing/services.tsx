@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { type StaticImageData } from "next/image";
+import { useEffect, useState } from "react";
 import aiImage from "@/assets/images/services/ai.webp";
 import customImage from "@/assets/images/services/custom.webp";
 import web2Image from "@/assets/images/services/web2.webp";
@@ -9,6 +10,7 @@ import web3Image from "@/assets/images/services/web3.webp";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
 import { CTAButton } from "@/components/ui/cta-button";
+import { Skeleton } from "@/components/ui/skeleton";
 import { CAL_LINK } from "@/constants";
 import { cn } from "@/lib/utils";
 import { useCarousel } from "../animations/use-carousel";
@@ -52,6 +54,10 @@ const services: ServiceItem[] = [
 ];
 
 export function Services() {
+	const [loadedImageIds, setLoadedImageIds] = useState<Record<string, true>>(
+		{}
+	);
+
 	const {
 		activeId,
 		setActiveId,
@@ -59,6 +65,27 @@ export function Services() {
 		displayedItem: displayedService,
 		imageRef: imageCardRef,
 	} = useCarousel(services);
+
+	const isDisplayedImageLoaded = Boolean(loadedImageIds[displayedService.id]);
+
+	useEffect(() => {
+		const preloaders = services.map((service) => {
+			const preloader = new window.Image();
+			preloader.src = service.image.src;
+			preloader.onload = () => {
+				setLoadedImageIds((current) =>
+					current[service.id] ? current : { ...current, [service.id]: true }
+				);
+			};
+			return preloader;
+		});
+
+		return () => {
+			for (const preloader of preloaders) {
+				preloader.onload = null;
+			}
+		};
+	}, []);
 
 	return (
 		<Section
@@ -72,10 +99,24 @@ export function Services() {
 							className="relative aspect-4/3 overflow-hidden rounded-3xl border border-border/70 bg-secondary/40 lg:aspect-5/6"
 							ref={imageCardRef}
 						>
+							{!isDisplayedImageLoaded && (
+								<Skeleton className="absolute inset-0 z-10 rounded-none" />
+							)}
 							<Image
 								alt={`${displayedService.title} service preview`}
-								className="object-cover"
+								className={cn(
+									"object-cover transition-opacity duration-200",
+									isDisplayedImageLoaded ? "opacity-100" : "opacity-0"
+								)}
 								fill
+								key={displayedService.id}
+								onLoadingComplete={() => {
+									setLoadedImageIds((current) =>
+										current[displayedService.id]
+											? current
+											: { ...current, [displayedService.id]: true }
+									);
+								}}
 								placeholder="blur"
 								sizes="(max-width: 1024px) 100vw, 60vw"
 								src={displayedService.image}
