@@ -1,9 +1,12 @@
 import type { Route } from "next";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
+import filosignImage from "@/assets/images/works/filosign.webp";
+import haitheImage from "@/assets/images/works/haithe.webp";
+import replycorpImage from "@/assets/images/works/replycorp.webp";
 
 interface WorkCollageCardProps {
-	backgroundSrc: string;
+	backgroundSrc: StaticImageData;
 	href: Route;
 	subtitle: string;
 	title: string;
@@ -23,6 +26,7 @@ export function WorkCollageCard({
 					aria-hidden
 					className="object-cover opacity-80"
 					fill
+					placeholder="blur"
 					sizes="(max-width: 1024px) 100vw, 60vw"
 					src={backgroundSrc}
 				/>
@@ -46,8 +50,9 @@ export function WorkCollageCard({
 							alt="Filosign project"
 							className="h-auto w-full rounded-xl"
 							height={600}
+							placeholder="blur"
 							sizes="(max-width: 1024px) 60vw, 30vw"
-							src="/images/works/filosign.webp"
+							src={filosignImage}
 							width={800}
 						/>
 					</div>
@@ -57,8 +62,9 @@ export function WorkCollageCard({
 							alt="Haithe project"
 							className="h-auto w-full rounded-xl"
 							height={600}
+							placeholder="blur"
 							sizes="(max-width: 1024px) 60vw, 33vw"
-							src="/images/works/haithe.webp"
+							src={haitheImage}
 							width={800}
 						/>
 					</div>
@@ -68,8 +74,9 @@ export function WorkCollageCard({
 							alt="Replycorp project"
 							className="h-auto w-full rounded-xl"
 							height={600}
+							placeholder="blur"
 							sizes="(max-width: 1024px) 60vw, 33vw"
-							src="/images/works/replycorp.webp"
+							src={replycorpImage}
 							width={800}
 						/>
 					</div>

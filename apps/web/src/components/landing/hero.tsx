@@ -14,7 +14,7 @@ export function Hero() {
 				loop
 				muted
 				playsInline
-				src="/videos/hero_3.webm"
+				src="/videos/hero.webm"
 			/>
 
 			<div

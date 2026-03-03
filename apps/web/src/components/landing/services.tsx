@@ -1,7 +1,11 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
+import aiImage from "@/assets/images/services/ai.webp";
+import customImage from "@/assets/images/services/custom.webp";
+import web2Image from "@/assets/images/services/web2.webp";
+import web3Image from "@/assets/images/services/web3.webp";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
 import { CTAButton } from "@/components/ui/cta-button";
@@ -12,7 +16,7 @@ import { useCarousel } from "../animations/use-carousel";
 interface ServiceItem {
 	description: string;
 	id: string;
-	image: string;
+	image: StaticImageData;
 	title: string;
 }
 
@@ -22,28 +26,28 @@ const services: ServiceItem[] = [
 		title: "AI",
 		description:
 			"From AI workflow design to production integrations, we build practical AI systems that automate internal operations and improve user experiences.",
-		image: "/images/services/ai.webp",
+		image: aiImage,
 	},
 	{
 		id: "blockchain",
 		title: "Blockchain",
 		description:
 			"Secure smart contract systems, protocol integrations, and infrastructure for Web3 products that need reliability, traceability, and scale.",
-		image: "/images/services/web3.webp",
+		image: web3Image,
 	},
 	{
 		id: "full-stack",
 		title: "Full Stack Applications",
 		description:
 			"End-to-end product development across frontend, backend, APIs, and data layers with strong performance and maintainable architecture.",
-		image: "/images/services/web2.webp",
+		image: web2Image,
 	},
 	{
 		id: "custom-software",
 		title: "Custom Software",
 		description:
 			"Tailored platforms built around your business process, delivery workflow, and growth goals, not generic one-size-fits-all templates.",
-		image: "/images/services/custom.webp",
+		image: customImage,
 	},
 ];
 
@@ -72,6 +76,7 @@ export function Services() {
 								alt={`${displayedService.title} service preview`}
 								className="object-cover"
 								fill
+								placeholder="blur"
 								sizes="(max-width: 1024px) 100vw, 60vw"
 								src={displayedService.image}
 							/>

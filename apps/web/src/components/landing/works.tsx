@@ -1,7 +1,10 @@
 "use client";
 
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import { useState } from "react";
+import filosignImage from "@/assets/images/works/filosign.webp";
+import haitheImage from "@/assets/images/works/haithe.webp";
+import replycorpImage from "@/assets/images/works/replycorp.webp";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { Section } from "@/components/layout/section";
 import { CursorArrow } from "@/components/ui/cursor-arrow";
@@ -10,7 +13,7 @@ interface Project {
 	accentColor: string;
 	description: string;
 	id: string;
-	image: string;
+	image: StaticImageData;
 	link: string;
 	tags: string[];
 	title: string;
@@ -24,7 +27,7 @@ const projects: Project[] = [
 			"Turn reach into revenue. Link social activity to outcomes with a revolution in referral systems, transforming social media into a true viral sales channel. A way to directly connect social activity to outcomes.",
 		tags: ["Social Media", "Referral System", "Viral Marketing"],
 		link: "https://replycorp.io",
-		image: "/images/works/replycorp.webp",
+		image: replycorpImage,
 		accentColor: "#FF0013",
 	},
 	{
@@ -34,7 +37,7 @@ const projects: Project[] = [
 			"Production-grade system build, Decentralized digital signature platform with blockchain verification and post-quantum cryptography, delivered from concept to production-ready MVP",
 		tags: ["Blockchain", "Security", "React"],
 		link: "https://app.filosign.xyz",
-		image: "/images/works/filosign.webp",
+		image: filosignImage,
 		accentColor: "#4E9964",
 	},
 	{
@@ -44,7 +47,7 @@ const projects: Project[] = [
 			"Backend performance and infrastructure hardening. Optimized transaction processing and database performance for live Web3 marketplace.",
 		tags: ["Backend", "Web3", "Performance"],
 		link: "https://haithe.hetairoi.xyz",
-		image: "/images/works/haithe.webp",
+		image: haitheImage,
 		accentColor: "#010101",
 	},
 ];
@@ -132,6 +135,7 @@ export function Works() {
 												setHoveredImageId(null);
 												setInitialMousePos(null);
 											}}
+											placeholder="blur"
 											sizes="(max-width: 1024px) 100vw, 800px"
 											src={project.image}
 											width={800}

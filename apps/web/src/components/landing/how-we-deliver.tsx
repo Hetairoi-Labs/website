@@ -1,9 +1,10 @@
 import Image from "next/image";
+import fastTurnaroundsImage from "@/assets/images/how-we-deliver/fast-turnarounds.webp";
+import gradientPeachImage from "@/assets/images/how-we-deliver/gradient-peach.webp";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { WorkCollageCard } from "@/components/landing/collage-card";
 import { Section } from "@/components/layout/section";
 import { GraphLine } from "@/components/ui/graph-line";
-
 export function HowWeDeliver() {
 	return (
 		<Section className="" id="how-we-work">
@@ -42,9 +43,10 @@ export function HowWeDeliver() {
 											alt="Red sports car representing speed"
 											className="object-cover object-bottom"
 											fill
+											placeholder="blur"
 											priority
 											sizes="(max-width: 1024px) 100vw, 40vw"
-											src="/images/how-we-deliver/fast-turnarounds.webp"
+											src={fastTurnaroundsImage}
 										/>
 									</div>
 								</div>
@@ -68,8 +70,9 @@ export function HowWeDeliver() {
 											alt="Gradient peach"
 											className="rotate-180 object-cover object-center opacity-50"
 											fill
+											placeholder="blur"
 											sizes="(max-width: 1024px) 100vw, 40vw"
-											src="/images/how-we-deliver/gradient-peach.webp"
+											src={gradientPeachImage}
 										/>
 									</div>
 								</div>
@@ -98,7 +101,7 @@ export function HowWeDeliver() {
 						<StaggerText className="grow" delay={0.3}>
 							<StaggerItem className="h-full">
 								<WorkCollageCard
-									backgroundSrc="/images/how-we-deliver/gradient-peach.webp"
+									backgroundSrc={gradientPeachImage}
 									href="/#how-we-work"
 									subtitle="Learn our process"
 									title="Quality over quantity"

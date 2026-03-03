@@ -1,6 +1,8 @@
 import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import logoImage from "@/assets/images/logo.webp";
+import checkoutWorkBgImage from "@/assets/images/works/checkout-work-bg.webp";
 import { StaggerItem, StaggerText } from "@/components/animations/stagger-text";
 import { WorkCollageCard } from "@/components/landing/collage-card";
 import { Section } from "@/components/layout/section";
@@ -19,8 +21,9 @@ export function Contact() {
 										alt="Hetairoi logo"
 										className="object-cover object-top"
 										fill
+										placeholder="blur"
 										priority
-										src="/images/logo.webp"
+										src={logoImage}
 									/>
 								</div>
 								<div className="flex flex-col gap-2 py-1 md:pr-4">
@@ -45,7 +48,7 @@ export function Contact() {
 					<StaggerText delay={0.2} triggerOnView>
 						<StaggerItem>
 							<WorkCollageCard
-								backgroundSrc="/images/contact/checkout-work-bg.webp"
+								backgroundSrc={checkoutWorkBgImage}
 								href={"/#case-studies" as Route}
 								subtitle="View all works"
 								title="Checkout our work"
