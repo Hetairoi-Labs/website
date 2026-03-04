@@ -8,7 +8,7 @@ const headingGuideLines = [0, 1, 2, 3] as const;
 export function CtaSection() {
 	return (
 		<Section className="relative -mt-16 mb-16 overflow-hidden" id="cta">
-			<div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-10 md:gap-16">
+			<div className="mx-auto flex w-full max-w-7xl flex-col items-center gap-6 md:gap-16">
 				<div className="relative w-full">
 					<div
 						aria-hidden
@@ -25,7 +25,7 @@ export function CtaSection() {
 						delay={0.1}
 					>
 						<StaggerItem>
-							<h2 className="text-center font-normal text-6xl text-foreground leading-[0.95] tracking-[-0.05em] md:text-8xl lg:text-[10rem]">
+							<h2 className="text-center font-normal text-4xl text-foreground leading-[0.95] tracking-[-0.05em] md:text-8xl lg:text-6xl lg:text-[10rem]">
 								Ready to start?
 							</h2>
 						</StaggerItem>
@@ -33,12 +33,12 @@ export function CtaSection() {
 				</div>
 
 				<StaggerText
-					className="flex max-w-2xl flex-col items-start gap-6"
+					className="flex max-w-2xl flex-col items-center gap-6 lg:items-start"
 					delay={0.2}
 					triggerOnView
 				>
 					<StaggerItem>
-						<p className="text-lg text-muted-foreground leading-relaxed md:text-3xl">
+						<p className="text-center text-lg text-muted-foreground leading-relaxed md:text-3xl lg:text-left">
 							No strings attached - just a friendly call where we understand
 							your problem and share practical advice for free.
 						</p>

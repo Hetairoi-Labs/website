@@ -66,8 +66,11 @@ const pricingPlans: PricingPlan[] = [
 
 export function Pricing() {
 	return (
-		<Section className="-mt-16" id="pricing">
-			<div className="mx-auto flex w-full max-w-7xl flex-col gap-10 md:gap-14">
+		<Section className="pt-0 lg:pt-0">
+			<div
+				className="mx-auto flex w-full max-w-7xl flex-col gap-10 pt-12 md:gap-14 lg:pt-20"
+				id="pricing"
+			>
 				<StaggerText
 					className="grid grid-cols-1 gap-6 lg:grid-cols-[150px_1fr]"
 					delay={0.1}
@@ -79,7 +82,7 @@ export function Pricing() {
 						</p>
 					</StaggerItem>
 					<StaggerItem>
-						<h2 className="max-w-md font-normal text-5xl text-foreground leading-[0.95] tracking-[-0.04em] md:text-7xl">
+						<h2 className="max-w-md font-normal text-4xl text-foreground leading-[0.95] tracking-[-0.04em] md:text-6xl">
 							Choose a plan that fits
 						</h2>
 						<p className="mt-5 max-w-xl text-base text-muted-foreground leading-relaxed md:text-lg">

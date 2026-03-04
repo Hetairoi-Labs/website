@@ -7,8 +7,11 @@ import { Section } from "@/components/layout/section";
 import { GraphLine } from "@/components/ui/graph-line";
 export function HowWeDeliver() {
 	return (
-		<Section className="lg:py-20" id="how-we-work">
-			<div className="mx-auto flex max-w-7xl flex-col gap-20">
+		<Section className="py-0 lg:py-0">
+			<div
+				className="mx-auto flex max-w-7xl flex-col gap-12 py-12 lg:gap-16 lg:py-20"
+				id="how-we-work"
+			>
 				<StaggerText className="flex flex-col items-center gap-4" delay={0.2}>
 					<StaggerItem>
 						<span className="font-mono text-muted-foreground text-xs uppercase tracking-[0.2em]">
@@ -16,7 +19,7 @@ export function HowWeDeliver() {
 						</span>
 					</StaggerItem>
 					<StaggerItem>
-						<h2 className="text-center font-normal text-3xl text-foreground leading-[1.1] tracking-[-0.04em] md:text-4xl lg:text-6xl">
+						<h2 className="text-center font-normal text-4xl text-foreground leading-[1.1] tracking-[-0.04em] lg:text-6xl">
 							How we deliver better
 							<br />
 							work <span className="text-muted-foreground">that lasts</span>
