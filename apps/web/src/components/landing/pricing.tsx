@@ -19,10 +19,10 @@ const pricingPlans: PricingPlan[] = [
 	{
 		id: "starter",
 		name: "Flexible",
-		priceLabel: "$800",
+		priceLabel: "$2,500",
 		periodLabel: "/month",
 		description:
-			"Ongoing monthly support for early teams that need steady momentum.",
+			"Ongoing weekly support for early teams that need steady momentum.",
 		features: [
 			"Weekly sprint cadence with clear priorities",
 			"Architecture guidance and implementation support",
@@ -34,7 +34,7 @@ const pricingPlans: PricingPlan[] = [
 	{
 		id: "build",
 		name: "Comprehensive",
-		priceLabel: "$6,000",
+		priceLabel: "$7,500",
 		periodLabel: "/project",
 		description:
 			"Project-based product delivery with milestone-driven execution.",
