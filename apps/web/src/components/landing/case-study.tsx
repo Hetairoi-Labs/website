@@ -24,7 +24,7 @@ const projects: Project[] = [
 		id: "01",
 		title: "Replycorp",
 		description:
-			"Turn reach into revenue. Link social activity to outcomes with a revolution in referral systems, transforming social media into a true viral sales channel. A way to directly connect social activity to outcomes.",
+			"Multi-layer social attribution protocol linking engagement signals to on-chain conversion events. Engineered for high-throughput tracking with gas-optimized contracts and Merkle-proofed security to automate commission routing across decentralized networks.",
 		tags: ["Social Media", "Referral System", "Viral Marketing"],
 		link: "https://replycorp.io",
 		image: replycorpImage,
@@ -34,7 +34,7 @@ const projects: Project[] = [
 		id: "02",
 		title: "Filosign",
 		description:
-			"Production-grade system build, Decentralized digital signature platform with blockchain verification and post-quantum cryptography, delivered from concept to production-ready MVP",
+			"Zero-trust digital signature protocol eliminating centralized platform risk through permanent mathematical proof. Engineered with post-quantum cryptography (Kyber-1024 and Dilithium) and client-side AES-256 encryption to anchor immutable, quantum-resistant agreements directly to the Filecoin Virtual Machine (FVM).",
 		tags: ["Blockchain", "Security", "React"],
 		link: "https://app.filosign.xyz",
 		image: filosignImage,
@@ -44,7 +44,7 @@ const projects: Project[] = [
 		id: "03",
 		title: "Haithe",
 		description:
-			"Backend performance and infrastructure hardening. Optimized transaction processing and database performance for live Web3 marketplace.",
+			"Decentralized AI orchestration platform and multi-tenant marketplace eliminating centralized data silos. Engineered with a high-concurrency Rust backend and Metis L2 smart contracts to securely route multi-provider LLM workflows while automating per-call USDT micro-settlements natively on-chain.",
 		tags: ["Backend", "Web3", "Performance"],
 		link: "https://haithe.hetairoi.xyz",
 		image: haitheImage,
@@ -52,7 +52,7 @@ const projects: Project[] = [
 	},
 ];
 
-export function Projects() {
+export function CaseStudy() {
 	const [hoveredImageId, setHoveredImageId] = useState<string | null>(null);
 	const [initialMousePos, setInitialMousePos] = useState<{
 		x: number;
@@ -80,7 +80,7 @@ export function Projects() {
 					>
 						<StaggerItem>
 							<h2 className="text-start font-normal text-6xl text-foreground leading-none tracking-[-0.04em] md:text-8xl lg:text-[120px]">
-								Projects
+								Case Studies
 							</h2>
 						</StaggerItem>
 					</StaggerText>
