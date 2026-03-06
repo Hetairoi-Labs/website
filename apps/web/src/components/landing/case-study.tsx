@@ -70,7 +70,7 @@ export function CaseStudy() {
 			/>
 			<div
 				className="mx-auto flex max-w-7xl flex-col items-center gap-16 pt-16 md:gap-24"
-				id="projects"
+				id="case-studies"
 			>
 				<div className="w-full">
 					<StaggerText

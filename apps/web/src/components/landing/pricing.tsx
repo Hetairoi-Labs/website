@@ -82,12 +82,11 @@ export function Pricing() {
 						</p>
 					</StaggerItem>
 					<StaggerItem>
-						<h2 className="max-w-md font-normal text-4xl text-foreground leading-[0.95] tracking-[-0.04em] md:text-6xl">
-							Choose a plan that fits
+						<h2 className="max-w-2xl font-normal text-4xl text-foreground leading-[0.95] tracking-[-0.04em] md:text-6xl">
+							Engagement models
 						</h2>
 						<p className="mt-5 max-w-xl text-base text-muted-foreground leading-relaxed md:text-lg">
-							Transparent starting points. Final scope is tailored after
-							discovery.
+							Transparent starting points. Final scope tailored after discovery.
 						</p>
 					</StaggerItem>
 				</StaggerText>

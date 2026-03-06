@@ -39,8 +39,9 @@ export function CtaSection() {
 				>
 					<StaggerItem>
 						<p className="text-center text-lg text-muted-foreground leading-relaxed md:text-3xl lg:text-left">
-							No strings attached - just a friendly call where we understand
-							your problem and share practical advice for free.
+							Book a free call and tell us what are you working on. We will
+							analyse your challenges and lay out a customized plan tailored to
+							your needs.
 						</p>
 					</StaggerItem>
 					<CTAButton href={CAL_LINK}>Book a Free Call</CTAButton>

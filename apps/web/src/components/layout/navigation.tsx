@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
 	{ id: "about", label: "About" },
 	{ id: "services", label: "Services" },
-	{ id: "projects", label: "Projects" },
+	{ id: "case-studies", label: "Case Studies" },
 	{ id: "faq", label: "FAQ" },
 	{ id: "pricing", label: "Pricing" },
 ] as const;
