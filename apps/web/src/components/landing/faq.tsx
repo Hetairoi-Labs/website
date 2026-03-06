@@ -9,45 +9,39 @@ import {
 const faqItems = [
 	{
 		id: "services",
-		question: "What services do you offer?",
+		question: "What technical domains are supported?",
 		answer:
-			"We specialize in blockchain product engineering, full-stack web development, and AI-powered product delivery. From strategy to launch, we handle end-to-end execution.",
+			"We specialize in LLM orchestration (RAG), EVM/Rust smart contracts, and high-availability distributed systems. Our deliverables focus on Layer 2 scaling, secure API architectures, and production-grade AI integration.",
 	},
 	{
 		id: "businesses",
-		question: "What types of businesses do you work with?",
+		question: "What organizations are the primary focus?",
 		answer:
-			"We work with startups, growth-stage teams, and established companies that need strong technical execution for product delivery.",
+			"Engagements center on high-stakes Web3 protocols, enterprise AI initiatives, and growth-stage teams requiring architectural rigor and 99.9% uptime reliability.",
 	},
 	{
 		id: "timeline",
-		question: "How long does a typical project take?",
+		question: "How are delivery timelines managed?",
 		answer:
-			"Most focused engagements ship in 4-12 weeks, depending on scope, integration complexity, and team dependencies.",
-	},
-	{
-		id: "process",
-		question: "What is your design and development process like?",
-		answer:
-			"We run a clear weekly cadence: scope alignment, fast implementation, async updates, and structured review checkpoints to keep decisions moving.",
+			"Focused engagements typically reach production in 4-12 weeks. Velocity is maintained via automated CI/CD workflows and modular design to ensure rapid shipping without accumulating technical debt.",
 	},
 	{
 		id: "support",
-		question: "Do you offer ongoing support after launch?",
+		question: "How are SLAs and post-launch stability handled?",
 		answer:
-			"Yes. We provide post-launch support for stabilization, iteration, and performance improvements based on real user behavior.",
+			"Post-launch maintenance is governed by Service Level Agreements covering 24/7 monitoring, security patching, and proactive infrastructure optimizations based on real-time system load.",
 	},
 	{
 		id: "start",
-		question: "How do we get started?",
+		question: "How does the engagement process begin?",
 		answer:
-			"Start with a short discovery call. We map your goals, identify delivery risks, and propose a practical execution plan.",
+			"Onboarding begins with a technical discovery phase and architectural audit. This identifies delivery risks and aligns system requirements with long-term operational and growth goals.",
 	},
 	{
 		id: "existing",
-		question: "Do you work with existing products or only new builds?",
+		question: "Is the focus on greenfield builds or legacy systems?",
 		answer:
-			"Both. We can modernize and extend existing systems, or design and build a new product from zero to production.",
+			"Capabilities cover building from zero and modernizing legacy codebases. Refactoring focuses on eliminating technical debt and restoring system agility to existing infrastructure.",
 	},
 ] as const;
 

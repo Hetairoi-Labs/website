@@ -87,10 +87,10 @@ export function About() {
 
 						<StaggerItem>
 							<p className="mt-8 max-w-xl text-foreground text-lg leading-relaxed md:text-2xl">
-								Our vision is to empower businesses to grow with clarity and
-								purpose. We partner with clients to understand their goals and
-								values, then create digital experiences that truly represent who
-								they are and connect with the people they serve.
+								We solve technical debt through architectural rigor. Our focus
+								is building high-availability, resilient systems that prioritize
+								technical integrity over temporary patches, ensuring your
+								infrastructure is engineered for scale from day one.
 							</p>
 						</StaggerItem>
 
@@ -111,8 +111,9 @@ export function About() {
 									<span className="font-mono text-brand">■■■■■■■ ■■ ■■ ■■</span>
 								</div>
 								<p className="max-w-sm text-base text-foreground italic leading-relaxed">
-									We&apos;ve guided many businesses toward success, and
-									we&apos;re ready for yours.
+									The Hetairoi were the elite shock cavalry of the ancient
+									Macedonian army. They are regarded as one of the first, most
+									effective shock cavalry in European history.
 								</p>
 							</div>
 						</StaggerItem>

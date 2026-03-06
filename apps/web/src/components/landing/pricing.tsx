@@ -17,49 +17,49 @@ interface PricingPlan {
 
 const pricingPlans: PricingPlan[] = [
 	{
-		id: "starter",
-		name: "Flexible",
-		priceLabel: "$2,500",
+		id: "retainer",
+		name: "Technical Retainer",
+		priceLabel: "$5,000",
 		periodLabel: "/month",
 		description:
-			"Ongoing weekly support for early teams that need steady momentum.",
+			"Ongoing architectural oversight and engineering support for teams requiring consistent technical momentum.",
 		features: [
-			"Weekly sprint cadence with clear priorities",
-			"Architecture guidance and implementation support",
-			"Weekly updates and async collaboration",
-			"Scoped delivery with predictable turnaround",
-			"Ideal for teams that are figuring out and need flexibility",
+			"Weekly sprint cadence with a prioritized technical backlog",
+			"Architectural guidance and protocol-level implementation support",
+			"Weekly updates with dedicated asynchronous collaboration",
+			"Proactive infrastructure health and dependency security audits",
+			"Ideal for scaling teams requiring high-level technical direction",
 		],
 	},
 	{
-		id: "build",
-		name: "Comprehensive",
-		priceLabel: "$7,500",
+		id: "delivery",
+		name: "Production Delivery",
+		priceLabel: "$15,000",
 		periodLabel: "/project",
 		description:
-			"Project-based product delivery with milestone-driven execution.",
+			"Milestone-driven product engineering with integrated automated QA and 99.9% uptime targets.",
 		highlight: true,
 		features: [
-			"Outcome-based scoping and implementation",
-			"Full-stack build across prioritized features",
-			"Milestones with predictable handoffs",
-			"Structured reviews and delivery checkpoints",
-			"Priority speed, support and maintenance",
+			"Outcome-based scoping for full-stack build execution",
+			"Implementation of low-latency and scalable system architectures",
+			"Integrated CI/CD pipelines and automated testing frameworks",
+			"Predictable handoffs with structured architectural reviews",
+			"Post-launch stabilization and performance monitoring",
 		],
 	},
 	{
 		id: "custom",
-		name: "Enterprise",
+		name: "Strategic Infrastructure",
 		priceLabel: "Custom",
 		periodLabel: "",
 		description:
-			"For advanced scope, strict compliance, or complex integrations.",
+			"For complex integrations, strict compliance requirements, or cross-ecosystem protocol engineering.",
 		features: [
-			"Tailored delivery scope and phased execution",
-			"Compliance-aware architecture and implementation",
-			"Complex integrations across product ecosystems",
-			"Technical governance for cross-team programs",
-			"Custom proposal after discovery and planning",
+			"Tailored delivery scope with multi-phased execution plans",
+			"Compliance-aware architecture for high-stakes environments",
+			"Complex systems integration across product ecosystems",
+			"Engineering governance for high-security, multi-team programs",
+			"Custom infrastructure scaling and failover strategy",
 		],
 	},
 ] as const;
@@ -104,7 +104,7 @@ export function Pricing() {
 								<article className="flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card">
 									<div className="flex min-h-62 flex-col gap-6 p-6 md:min-h-68 md:p-8">
 										<p className="font-mono text-muted-foreground text-xs uppercase tracking-[0.2em]">
-											<span className="text-foreground">{plan.name} Plan</span>{" "}
+											<span className="text-foreground">{plan.name}</span>{" "}
 											{plan.id !== "custom" && (
 												<span className="font-sans text-muted-foreground lowercase">
 													starting at
@@ -135,7 +135,7 @@ export function Pricing() {
 										rel="noopener noreferrer"
 										target="_blank"
 									>
-										{plan.id === "custom" ? "Book a Free Call" : "Get Started"}
+										{plan.id === "custom" ? "Book an audit" : "Get Started"}
 									</Link>
 
 									<ul className="flex flex-col gap-4 p-6 pt-7 md:p-8">

@@ -25,30 +25,30 @@ interface ServiceItem {
 const services: ServiceItem[] = [
 	{
 		id: "ai",
-		title: "AI",
+		title: "Artificial Intelligence",
 		description:
-			"From AI workflow design to production integrations, we build practical AI systems that automate internal operations and improve user experiences.",
+			"Production-ready systems with LLM orchestration, vector database integration, and RAG-based architectures. Focus on secure data pipeline security, low-latency inference, and high-volume performance optimization for enterprise automation.",
 		image: aiImage,
 	},
 	{
 		id: "blockchain",
-		title: "Blockchain",
+		title: "Blockchain Engineering",
 		description:
-			"Secure smart contract systems, protocol integrations, and infrastructure for Web3 products that need reliability, traceability, and scale.",
+			"Specializing in EVM-compatible smart contracts, ZK-rollups, and protocol-level security. Implementation of Layer 2 scaling, cross-chain interoperability, and MEV resistance for high-stakes DeFi protocols and account abstraction frameworks.",
 		image: web3Image,
 	},
 	{
 		id: "full-stack",
 		title: "Full Stack Applications",
 		description:
-			"End-to-end product development across frontend, backend, APIs, and data layers with strong performance and maintainable architecture.",
+			"High-availability, distributed platforms engineered for 99.9% uptime and seamless scale. Integration of automated QA and CI/CD pipelines to ensure production-grade stability and eliminate technical debt at velocity.",
 		image: web2Image,
 	},
 	{
 		id: "custom-software",
 		title: "Custom Software",
 		description:
-			"Tailored platforms built around your business process, delivery workflow, and growth goals, not generic one-size-fits-all templates.",
+			"Engineering proprietary systems tailored to intricate business logic. Focus on high-throughput data processing, legacy codebase modernization, and modular API design. Delivering maintainable platforms that scale without bottlenecks.",
 		image: customImage,
 	},
 ];
@@ -188,7 +188,7 @@ export function Services() {
 									</motion.div>
 								</AnimatePresence>
 							</div>
-							<div className="mt-4">
+							<div className="mt-12 lg:mt-4">
 								<CTAButton href={CAL_LINK}>Book a discovery call</CTAButton>
 							</div>
 						</div>

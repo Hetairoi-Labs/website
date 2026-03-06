@@ -34,11 +34,13 @@ export function HowWeDeliver() {
 								<div className="relative flex h-[600px] flex-col justify-between overflow-hidden rounded-3xl bg-muted p-6 md:p-8">
 									<div className="relative z-10 flex max-w-sm flex-col gap-4">
 										<h3 className="font-normal text-2xl text-foreground tracking-[-0.04em] md:text-3xl">
-											Fast turnarounds
+											Performance First
 										</h3>
 										<p className="text-base text-foreground leading-relaxed md:text-lg">
-											Timelines are respected here. Expect quick handoffs, clear
-											communication, and momentum that doesn&apos;t stall.
+											Low-latency engineering and high-throughput are
+											prioritized across every system layer. Strategic resource
+											utilization ensures core technology remains scalable and
+											never bottlenecks growth.
 										</p>
 									</div>
 									<div className="absolute bottom-0 left-0 h-full w-full">
@@ -61,11 +63,13 @@ export function HowWeDeliver() {
 								<div className="relative flex h-[300px] flex-col items-start overflow-hidden rounded-3xl bg-card p-6 md:p-8">
 									<div className="relative z-10 flex max-w-md flex-col gap-4">
 										<h3 className="font-normal text-2xl text-foreground tracking-[-0.04em] md:text-3xl">
-											Iteration until satisfaction
+											High Availability
 										</h3>
 										<p className="text-base text-foreground leading-relaxed md:text-lg">
-											Refinement is part of the process. We stay in the loop
-											until you&apos;re genuinely happy with the outcome.
+											Commitment to 99.9% uptime for mission-critical
+											infrastructure drives the architectural design. Systems
+											are engineered for resilience, maintaining stability
+											through extreme traffic spikes and protocol shifts.
 										</p>
 									</div>
 									<div className="pointer-events-none absolute right-0 bottom-0 h-full w-full">
@@ -89,11 +93,13 @@ export function HowWeDeliver() {
 								<div className="relative flex h-[300px] flex-col overflow-hidden rounded-3xl bg-dark p-6 text-dark-foreground md:p-8">
 									<div className="relative z-10 flex max-w-md flex-col gap-4">
 										<h3 className="font-normal text-2xl text-dark-foreground tracking-[-0.04em] md:text-3xl">
-											Conversion focused
+											Technical Integrity
 										</h3>
 										<p className="text-base text-dark-foreground leading-relaxed md:text-lg">
-											Good design looks great, but it also works. Every decision
-											is made with performance and user goals in mind.
+											Maintainable, production-ready code is the baseline to
+											eliminate technical debt from the outset.
+											Longevity-focused engineering ensures technology provides
+											momentum rather than architectural friction.
 										</p>
 									</div>
 									<GraphLine />
@@ -107,7 +113,7 @@ export function HowWeDeliver() {
 									backgroundSrc={gradientPeachImage}
 									href="/#about"
 									subtitle="Learn our process"
-									title="Quality over quantity"
+									title="Engineering Governance"
 								/>
 							</StaggerItem>
 						</StaggerText>

@@ -50,8 +50,8 @@ export function Hero() {
 						data-intro-item
 						data-intro-order="5"
 					>
-						US-based software firm delivering AI-first platforms, blockchain
-						solutions, and end-to-end applications.
+						US-based engineering firm specializing in high-uptime AI platforms,
+						blockchain infrastructure, and scalable system architecture.
 					</p>
 
 					<div
