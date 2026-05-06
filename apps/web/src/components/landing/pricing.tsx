@@ -18,33 +18,31 @@ interface PricingPlan {
 const pricingPlans: PricingPlan[] = [
 	{
 		id: "retainer",
-		name: "Engineering Retainer",
-		priceLabel: "$4,000",
+		name: "Tier 1 — MVP & product",
+		priceLabel: "$3,000",
 		periodLabel: "/month",
 		description:
-			"Dedicated technical support and architectural guidance to keep your development team moving fast.",
+			"Focused monthly cadence for MVPs, pilots, and iterative product work—design through shipped increments.",
 		features: [
-			"Weekly planning and code review sessions",
-			"Direct help with complex technical roadblocks",
-			"Continuous infrastructure and security monitoring",
-			"Async support channel for your developers",
-			"Perfect for startups needing senior engineering backup",
+			"Scoped milestones toward a shippable MVP or next release",
+			"Architecture and implementation for web, backend, or on-chain surfaces",
+			"Weekly syncs plus async collaboration on priorities",
+			"Testing, CI, and deployment kept production-ready",
 		],
 	},
 	{
 		id: "delivery",
-		name: "Core Development",
-		priceLabel: "$12,000",
+		name: "End-to-end projects",
+		priceLabel: "$8,000",
 		periodLabel: "/project",
 		description:
-			"End-to-end engineering for a specific feature, MVP, or foundational product build.",
+			"Full delivery for a defined build—from discovery and build to handoff—with clear milestones and ownership.",
 		highlight: true,
 		features: [
-			"Clear project scoping and milestone delivery",
-			"Secure and scalable backend or smart contract development",
-			"Setup of reliable testing and deployment pipelines",
-			"Clean code handoff with full documentation",
-			"Post-launch support to ensure system stability",
+			"Discovery, spec, and milestone plan before build starts",
+			"Automated testing and deployment pipelines you can run",
+			"Documentation and clean handoff for your team",
+			"Stabilization window after launch",
 		],
 	},
 	{
@@ -86,7 +84,8 @@ export function Pricing() {
 							Engagement models
 						</h2>
 						<p className="mt-5 max-w-xl text-base text-muted-foreground leading-relaxed md:text-lg">
-							Transparent starting points. Final scope tailored after discovery.
+							MVP and product work from $3,000/month. End-to-end projects from
+							$6,000. Custom engagements by quote.
 						</p>
 					</StaggerItem>
 				</StaggerText>
